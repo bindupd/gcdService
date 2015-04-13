@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://com/test/gcd/soap/WebService" 
+	 targetNamespace="http://com/test/gcd/soap/WebService" elementFormDefault="qualified">
+	
+	<xsd:element name="gcdRequest">
+	</xsd:element>
+	<xsd:element name="gcdResponse">
+		<xsd:complexType>  
+                <xsd:sequence>  
+                     <xsd:element name="gcd" type="xsd:int"/>  
+                </xsd:sequence>  
+           </xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="gcdListRequest">
+	</xsd:element>
+	<xsd:element name="gcdListResponse">
+		<xsd:complexType>  
+                <xsd:sequence>  
+                     <xsd:element name="gcd" type="xsd:int" maxOccurs="unbounded"/>  
+                </xsd:sequence>  
+           </xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="gcdSumRequest">
+	</xsd:element>
+	<xsd:element name="gcdSumResponse">
+		<xsd:complexType>  
+                <xsd:sequence>  
+                     <xsd:element name="gcd" type="xsd:int"/>  
+                </xsd:sequence>  
+           </xsd:complexType>
+	</xsd:element>
+	
+</xsd:schema>
